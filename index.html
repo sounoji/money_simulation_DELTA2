@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>資産形成シミュレーション</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <canvas id="myPieChart"></canvas>
+  <div class="input-area">
+    <div class="input-area__inner">
+      <div class="setupAge">
+        <p>現在の年齢</p>
+        <input class="startAge" type="number">
+        <p>シミュレーション終了年齢</p>
+        <input class="finishAge" type="number">
+      </div>
+      <div class="income">
+        <p>現在の貯金</p>
+        <input class="intercept" type="number">
+        <p>20歳の年収</p>
+        <input class="chart income20" type="number">
+        <span>万円</span>
+        <p>30歳の年収</p>
+        <input class="chart income30" type="number">
+        <span>万円</span>
+        <p>40歳の年収</p>
+        <input class="chart income40" type="number">
+        <span>万円</span>
+        <p>50歳の年収</p>
+        <input class="chart income50" type="number">
+        <span>万円</span>
+        <p>60歳の年収</p>
+        <input class="chart income60" type="number">
+        <span>万円</span>
+      </div>
+      <div class="expense">
+        <p>20歳の支出（年）</p>
+        <input class="chart expense20" type="number">
+        <span>万円</span>
+        <p>30歳の支出（年）</p>
+        <input class="chart expense30" type="number">
+        <span>万円</span>
+        <p>40歳の支出（年）</p>
+        <input class="chart expense40" type="number">
+        <span>万円</span>
+        <p>50歳の支出（年）</p>
+        <input class="chart expense50" type="number">
+        <span>万円</span>
+        <p>60歳の支出（年）</p>
+        <input class="chart expense60" type="number">
+        <span>万円</span>
+      </div>
+      <!--<div class="fireGoal">
+        <p>FIREするときの目標資産</p>
+        <input class="goal" type="number">万円
+      </div>-->
+      <button type="submit" class="complete-btn">入力完了</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
